@@ -58,15 +58,15 @@
                                 </connections>
                             </button>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="9e0-zv-RiN" userLabel="Message Panel">
-                                <rect key="frame" x="15" y="15" width="115" height="88"/>
+                                <rect key="frame" x="15" y="15" width="115.5" height="88"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AVp-TR-4Nw">
-                                    <rect key="frame" x="0.0" y="0.0" width="115" height="88"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="115.5" height="88"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4B-nn-Jhq">
-                                            <rect key="frame" x="0.0" y="0.0" width="115" height="88"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="115.5" height="88"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CFm-yP-zdd">
-                                                <rect key="frame" x="0.0" y="0.0" width="115" height="88"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="115.5" height="88"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GT6-ZJ-can">
@@ -232,7 +232,7 @@
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" systemColor="tertiarySystemFillColor"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本: 2.1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tQh-dm-sJ2">
-                            <rect key="frame" x="0.0" y="397.5" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="337.5" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -267,34 +267,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="OgG-Hc-V9b">
-                                        <rect key="frame" x="0.0" y="99.5" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OgG-Hc-V9b" id="RRo-o5-eGZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-wA-Tj4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <state key="normal" title="兼容信息">
-                                                        <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="watchSupportDevice:" destination="DF8-Gu-Tf1" eventType="touchDown" id="wJC-jB-sKO"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Wd2-wA-Tj4" secondAttribute="trailing" id="6b3-qh-Rta"/>
-                                                <constraint firstAttribute="bottom" secondItem="Wd2-wA-Tj4" secondAttribute="bottom" id="9QC-7m-8Mn"/>
-                                                <constraint firstItem="Wd2-wA-Tj4" firstAttribute="leading" secondItem="RRo-o5-eGZ" secondAttribute="leading" id="MbV-mB-E5E"/>
-                                                <constraint firstItem="Wd2-wA-Tj4" firstAttribute="top" secondItem="RRo-o5-eGZ" secondAttribute="top" id="tIn-tj-9i2"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="4ff-4P-12P">
-                                        <rect key="frame" x="0.0" y="159.5" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4ff-4P-12P" id="Gui-YD-Pg5">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -323,7 +297,7 @@
                             <tableViewSection headerTitle="" id="mWI-ab-2GT" userLabel="Advanced">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="ntL-Gf-Jtg">
-                                        <rect key="frame" x="0.0" y="259.5" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="199.5" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ntL-Gf-Jtg" id="OsX-gi-o3C">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -348,7 +322,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="zCu-fa-SZf">
-                                        <rect key="frame" x="0.0" y="319.5" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="259.5" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zCu-fa-SZf" id="Kcz-ge-ybY">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -385,7 +359,6 @@
                         <outlet property="privacyButton" destination="Y48-Oh-ccn" id="EQn-SM-9d6"/>
                         <outlet property="rateButton" destination="Y3h-wx-rc5" id="ZiL-hG-vYP"/>
                         <outlet property="shareTimelineButton" destination="HJO-bH-qiw" id="b0X-ui-X1O"/>
-                        <outlet property="watchSupportButton" destination="Wd2-wA-Tj4" id="9LU-Yr-ski"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xit-vt-Vha" userLabel="First Responder" sceneMemberID="firstResponder"/>
