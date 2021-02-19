@@ -91,7 +91,8 @@ class SettingsViewController: UITableViewController {
         
         Mixpanel.mainInstance().track(event: "share")
         
-        if let myWebsite = URL(string: "https://argoodies.github.io/arxcandle-share/") {//Enter link to your app here
+        if let myWebsite = URL(string: "https://apps.apple.com/cn/app/arxcandle/id1346647915") {
+            //Enter link to your app here
             let objectsToShare = [textToShare, myWebsite] as [Any]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             
