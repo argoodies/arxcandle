@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -221,150 +220,6 @@
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="98.50074962518741"/>
         </scene>
-        <!--settingsViewController-->
-        <scene sceneID="i51-5j-JLv">
-            <objects>
-                <tableViewController restorationIdentifier="settingsViewController" storyboardIdentifier="settingsViewController" id="DF8-Gu-Tf1" userLabel="settingsViewController" customClass="SettingsViewController" customModule="ARCandle" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ej0-Lm-asn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
-                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" systemColor="tertiarySystemFillColor"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本: 2.1.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tQh-dm-sJ2">
-                            <rect key="frame" x="0.0" y="337.5" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <sections>
-                            <tableViewSection headerTitle="" id="cg0-HU-miL" userLabel="Advanced">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="dse-4N-aFA">
-                                        <rect key="frame" x="0.0" y="39.5" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dse-4N-aFA" id="CwD-nP-OvI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y48-Oh-ccn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                                    <state key="normal" title="隐私协议">
-                                                        <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="linkIntoPrivacy:" destination="DF8-Gu-Tf1" eventType="touchDown" id="h14-T0-qf9"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Y48-Oh-ccn" firstAttribute="top" secondItem="CwD-nP-OvI" secondAttribute="top" id="TNC-LR-7lq"/>
-                                                <constraint firstAttribute="trailing" secondItem="Y48-Oh-ccn" secondAttribute="trailing" id="ZE7-1u-hkg"/>
-                                                <constraint firstItem="Y48-Oh-ccn" firstAttribute="leading" secondItem="CwD-nP-OvI" secondAttribute="leading" id="dVX-dn-zAb"/>
-                                                <constraint firstAttribute="bottom" secondItem="Y48-Oh-ccn" secondAttribute="bottom" id="lEe-hF-q9x"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="4ff-4P-12P">
-                                        <rect key="frame" x="0.0" y="99.5" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4ff-4P-12P" id="Gui-YD-Pg5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arC-dN-zoQ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                                    <state key="normal" title="意见反馈">
-                                                        <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="linkIntoMail:" destination="DF8-Gu-Tf1" eventType="touchDown" id="ADD-uk-B3L"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="arC-dN-zoQ" firstAttribute="top" secondItem="Gui-YD-Pg5" secondAttribute="top" id="QEa-YO-hWN"/>
-                                                <constraint firstAttribute="trailing" secondItem="arC-dN-zoQ" secondAttribute="trailing" id="VRR-gl-7FB"/>
-                                                <constraint firstItem="arC-dN-zoQ" firstAttribute="leading" secondItem="Gui-YD-Pg5" secondAttribute="leading" id="Zzo-9d-g7n"/>
-                                                <constraint firstAttribute="bottom" secondItem="arC-dN-zoQ" secondAttribute="bottom" id="yWF-gz-vDE"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="" id="mWI-ab-2GT" userLabel="Advanced">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="ntL-Gf-Jtg">
-                                        <rect key="frame" x="0.0" y="199.5" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ntL-Gf-Jtg" id="OsX-gi-o3C">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3h-wx-rc5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                                    <state key="normal" title="给我们好评">
-                                                        <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="rateHandler:" destination="DF8-Gu-Tf1" eventType="touchDown" id="Dcd-Vb-xWs"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Y3h-wx-rc5" secondAttribute="bottom" id="0WY-xE-KkH"/>
-                                                <constraint firstItem="Y3h-wx-rc5" firstAttribute="leading" secondItem="OsX-gi-o3C" secondAttribute="leading" id="2mV-Ce-QGY"/>
-                                                <constraint firstItem="Y3h-wx-rc5" firstAttribute="top" secondItem="OsX-gi-o3C" secondAttribute="top" id="LBw-uR-xBq"/>
-                                                <constraint firstAttribute="trailing" secondItem="Y3h-wx-rc5" secondAttribute="trailing" id="MDT-YE-HTm"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="zCu-fa-SZf">
-                                        <rect key="frame" x="0.0" y="259.5" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zCu-fa-SZf" id="Kcz-ge-ybY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJO-bH-qiw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                                    <state key="normal" title="分享给好友">
-                                                        <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="triggerShareTimeline:" destination="DF8-Gu-Tf1" eventType="touchDown" id="Erq-aL-Dnu"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="HJO-bH-qiw" secondAttribute="trailing" id="32U-51-JrS"/>
-                                                <constraint firstAttribute="bottom" secondItem="HJO-bH-qiw" secondAttribute="bottom" id="6GZ-nt-jVq"/>
-                                                <constraint firstItem="HJO-bH-qiw" firstAttribute="top" secondItem="Kcz-ge-ybY" secondAttribute="top" id="RlT-rF-fzj"/>
-                                                <constraint firstItem="HJO-bH-qiw" firstAttribute="leading" secondItem="Kcz-ge-ybY" secondAttribute="leading" id="dPh-Kx-fMc"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="DF8-Gu-Tf1" id="cMe-ho-8KO"/>
-                            <outlet property="delegate" destination="DF8-Gu-Tf1" id="LOs-h1-Ibr"/>
-                        </connections>
-                    </tableView>
-                    <connections>
-                        <outlet property="mailButton" destination="arC-dN-zoQ" id="VCZ-bf-Evo"/>
-                        <outlet property="privacyButton" destination="Y48-Oh-ccn" id="EQn-SM-9d6"/>
-                        <outlet property="rateButton" destination="Y3h-wx-rc5" id="ZiL-hG-vYP"/>
-                        <outlet property="shareTimelineButton" destination="HJO-bH-qiw" id="b0X-ui-X1O"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xit-vt-Vha" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="740" y="97.601199400299862"/>
-        </scene>
     </scenes>
     <resources>
         <image name="add" width="100" height="100"/>
@@ -373,14 +228,5 @@
         <image name="settings" width="100" height="100"/>
         <image name="settingsPressed" width="100" height="100"/>
         <image name="sweep" width="48" height="48"/>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tableCellGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tertiarySystemFillColor">
-            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

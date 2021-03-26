@@ -19,6 +19,12 @@
 		39C0B95A1E9C6B1F003FCA0C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C0B9581E9C6B1F003FCA0C /* Utilities.swift */; };
 		39D4A8BE1EA1AF530006EC65 /* PlaneDebugVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4A8BD1EA1AF530006EC65 /* PlaneDebugVisualization.swift */; };
 		39D8DC1B1E8ADAE600386B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D8DC1A1E8ADAE600386B05 /* LaunchScreen.storyboard */; };
+		452A78AB260E494000AA7718 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A78AA260E494000AA7718 /* PrivacyPolicyView.swift */; };
+		452A78AF260E4B4E00AA7718 /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A78AE260E4B4E00AA7718 /* VersionView.swift */; };
+		452A78B2260E4BB500AA7718 /* ShareTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A78B1260E4BB500AA7718 /* ShareTimelineView.swift */; };
+		452A78B8260E52A500AA7718 /* flower-fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 452A78B7260E52A500AA7718 /* flower-fire.scnp */; };
+		45DB6EFC25FE79DA00571B60 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB6EFB25FE79DA00571B60 /* DashboardView.swift */; };
+		45DB6F0125FE7B3500571B60 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB6F0025FE7B3500571B60 /* DashboardViewController.swift */; };
 		582FB0721F43EAC600AD8041 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 582FB0711F43EAC600AD8041 /* .swiftlint.yml */; };
 		58DE9FC71FDDA042008E25AF /* VirtualObjectsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE9FC61FDDA041008E25AF /* VirtualObjectsManager.swift */; };
 		A35A11CF1EF4EB070072FE74 /* ScieneView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A11CE1EF4EB070072FE74 /* ScieneView+Extension.swift */; };
@@ -28,7 +34,7 @@
 		B60CDD7D203602AA00DA3FB3 /* red-fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = B60CDD7C203602AA00DA3FB3 /* red-fire.scnp */; };
 		B60CDD852036DB9A00DA3FB3 /* buo.scnp in Resources */ = {isa = PBXBuildFile; fileRef = B60CDD842036DB9A00DA3FB3 /* buo.scnp */; };
 		B61FEA6B203348DD00E7F1AF /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61FEA6A203348DD00E7F1AF /* Bullet.swift */; };
-		B669B276242B9E9900FB63A8 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669B275242B9E9900FB63A8 /* Flower.swift */; };
+		B669B276242B9E9900FB63A8 /* FlowerCandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669B275242B9E9900FB63A8 /* FlowerCandle.swift */; };
 		B6D6ACA12033319A00C1AD0B /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D6AC9F2033319A00C1AD0B /* spark.png */; };
 		B6D6ACA620333D0C00C1AD0B /* blue-fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = B6D6ACA320333D0B00C1AD0B /* blue-fire.scnp */; };
 		C41366B91EB80DD400EC054A /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41366B81EB80DD400EC054A /* TextManager.swift */; };
@@ -53,6 +59,12 @@
 		39C0B9581E9C6B1F003FCA0C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		39D4A8BD1EA1AF530006EC65 /* PlaneDebugVisualization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneDebugVisualization.swift; sourceTree = "<group>"; };
 		39D8DC1A1E8ADAE600386B05 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		452A78AA260E494000AA7718 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		452A78AE260E4B4E00AA7718 /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
+		452A78B1260E4BB500AA7718 /* ShareTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareTimelineView.swift; sourceTree = "<group>"; };
+		452A78B7260E52A500AA7718 /* flower-fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = "flower-fire.scnp"; sourceTree = "<group>"; };
+		45DB6EFB25FE79DA00571B60 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		45DB6F0025FE7B3500571B60 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		582FB0711F43EAC600AD8041 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		58DE9FC61FDDA041008E25AF /* VirtualObjectsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjectsManager.swift; sourceTree = "<group>"; };
 		A35A11CE1EF4EB070072FE74 /* ScieneView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScieneView+Extension.swift"; sourceTree = "<group>"; };
@@ -64,7 +76,7 @@
 		B60CDD7C203602AA00DA3FB3 /* red-fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = "red-fire.scnp"; sourceTree = "<group>"; };
 		B60CDD842036DB9A00DA3FB3 /* buo.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = buo.scnp; sourceTree = "<group>"; };
 		B61FEA6A203348DD00E7F1AF /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
-		B669B275242B9E9900FB63A8 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
+		B669B275242B9E9900FB63A8 /* FlowerCandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerCandle.swift; sourceTree = "<group>"; };
 		B6D6AC9F2033319A00C1AD0B /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		B6D6ACA320333D0B00C1AD0B /* blue-fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = "blue-fire.scnp"; sourceTree = "<group>"; };
 		C41366B81EB80DD400EC054A /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
@@ -113,6 +125,7 @@
 		3929C48A1E89EC2C00E00B60 /* ARCandle */ = {
 			isa = PBXGroup;
 			children = (
+				45DB6EFA25FE79C200571B60 /* Views */,
 				3929C48B1E89EC2C00E00B60 /* AppDelegate.swift */,
 				3929C48D1E89EC2C00E00B60 /* MainViewController.swift */,
 				39C0B9571E9C6B1F003FCA0C /* SettingsViewController.swift */,
@@ -130,12 +143,25 @@
 				3929C48F1E89EC2C00E00B60 /* Main.storyboard */,
 				B6D6ACA320333D0B00C1AD0B /* blue-fire.scnp */,
 				B60CDD7C203602AA00DA3FB3 /* red-fire.scnp */,
+				452A78B7260E52A500AA7718 /* flower-fire.scnp */,
 				B60CDD842036DB9A00DA3FB3 /* buo.scnp */,
 				582FB0711F43EAC600AD8041 /* .swiftlint.yml */,
 				B6D6AC9F2033319A00C1AD0B /* spark.png */,
 				B61FEA6A203348DD00E7F1AF /* Bullet.swift */,
 			);
 			path = ARCandle;
+			sourceTree = "<group>";
+		};
+		45DB6EFA25FE79C200571B60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45DB6EFB25FE79DA00571B60 /* DashboardView.swift */,
+				45DB6F0025FE7B3500571B60 /* DashboardViewController.swift */,
+				452A78AA260E494000AA7718 /* PrivacyPolicyView.swift */,
+				452A78AE260E4B4E00AA7718 /* VersionView.swift */,
+				452A78B1260E4BB500AA7718 /* ShareTimelineView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		68998384C186F3C777B47B53 /* Pods */ = {
@@ -163,7 +189,7 @@
 				A3D672EC1EF0E7C500110E48 /* ShortCandle.swift */,
 				A3D672EE1EF0E80200110E48 /* IceCandle.swift */,
 				A3D672F01EF0E81B00110E48 /* RedCandle.swift */,
-				B669B275242B9E9900FB63A8 /* Flower.swift */,
+				B669B275242B9E9900FB63A8 /* FlowerCandle.swift */,
 			);
 			path = "Virtual Objects";
 			sourceTree = "<group>";
@@ -241,6 +267,7 @@
 				B60CDD7D203602AA00DA3FB3 /* red-fire.scnp in Resources */,
 				B6D6ACA12033319A00C1AD0B /* spark.png in Resources */,
 				3929C4931E89EC2C00E00B60 /* Assets.xcassets in Resources */,
+				452A78B8260E52A500AA7718 /* flower-fire.scnp in Resources */,
 				3929C4911E89EC2C00E00B60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,8 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				39C0B9511E9C63CB003FCA0C /* HitTestVisualization.swift in Sources */,
+				452A78AB260E494000AA7718 /* PrivacyPolicyView.swift in Sources */,
 				A35A11CF1EF4EB070072FE74 /* ScieneView+Extension.swift in Sources */,
-				B669B276242B9E9900FB63A8 /* Flower.swift in Sources */,
+				452A78B2260E4BB500AA7718 /* ShareTimelineView.swift in Sources */,
+				B669B276242B9E9900FB63A8 /* FlowerCandle.swift in Sources */,
 				3929C48E1E89EC2C00E00B60 /* MainViewController.swift in Sources */,
 				C41366B91EB80DD400EC054A /* TextManager.swift in Sources */,
 				39C0B95A1E9C6B1F003FCA0C /* Utilities.swift in Sources */,
@@ -315,7 +344,9 @@
 				A3D672F11EF0E81B00110E48 /* RedCandle.swift in Sources */,
 				B61FEA6B203348DD00E7F1AF /* Bullet.swift in Sources */,
 				3987BEDC1E9E057F00167FAC /* Gesture.swift in Sources */,
+				45DB6EFC25FE79DA00571B60 /* DashboardView.swift in Sources */,
 				C4E87DD91EA6B40F002117D6 /* VirtualObject.swift in Sources */,
+				452A78AF260E4B4E00AA7718 /* VersionView.swift in Sources */,
 				39D4A8BE1EA1AF530006EC65 /* PlaneDebugVisualization.swift in Sources */,
 				39C0B9591E9C6B1F003FCA0C /* SettingsViewController.swift in Sources */,
 				A3D672ED1EF0E7C500110E48 /* ShortCandle.swift in Sources */,
@@ -323,6 +354,7 @@
 				C42A71BD1E9C0AF200944367 /* FocusSquare.swift in Sources */,
 				3929C48C1E89EC2C00E00B60 /* AppDelegate.swift in Sources */,
 				A3D672EF1EF0E80200110E48 /* IceCandle.swift in Sources */,
+				45DB6F0125FE7B3500571B60 /* DashboardViewController.swift in Sources */,
 				C4FBC02B1EC6438B003F7864 /* ARCameraTrackingState.swift in Sources */,
 				58DE9FC71FDDA042008E25AF /* VirtualObjectsManager.swift in Sources */,
 			);
@@ -460,8 +492,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9TGD35M5GT;
 				INFOPLIST_FILE = "$(SRCROOT)/ARCandle/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.1.2;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "meloalright.virtual-west.arcandle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -482,8 +515,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9TGD35M5GT;
 				INFOPLIST_FILE = "$(SRCROOT)/ARCandle/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.1.2;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "meloalright.virtual-west.arcandle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

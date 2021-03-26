@@ -44,7 +44,7 @@ class VirtualObjectSelectionViewController: UIViewController, UITableViewDataSou
 		case 2:
 			return IceCandle()
         case 3:
-            return Flower()
+            return FlowerCandle()
 		default:
 			return RedCandle()
 		}
