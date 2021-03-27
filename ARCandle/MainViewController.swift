@@ -934,10 +934,17 @@ extension MainViewController {
         if (findingText.isHidden == false) {
             findingText.text = "请左右移动您的手机"
         }
-//        // 去掉定时反而很好
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: {
-//            self.showAdd()
-//        })
+        // 去掉定时反而很好？
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+            if (self.findingText.isHidden == false) {
+                self.findingText.text = "请左右寻找光滑的平面"
+            }
+        })
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: {
+            if (self.findingText.isHidden == false) {
+                self.findingText.text = "请左右移动您的手机"
+            }
+        })
     }
 
     func hideAdd() {
