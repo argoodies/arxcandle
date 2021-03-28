@@ -1,8 +1,13 @@
-# arxcandle   
-   
-   
+# arxcandle
+
+`Use SwiftUI`
+
+## Build
+
 ```shell
 pod install
+```
 
-# open xcworkspace + run app
+```shell
+# Run App
 ```
