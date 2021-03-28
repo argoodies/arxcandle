@@ -714,9 +714,6 @@ extension MainViewController :VirtualObjectSelectionViewControllerDelegate {
                 else if object.title == "冰蜡烛" {
                     fire = "blue-fire"
                 }
-                else if object.title == "樱花蜡烛" {
-                    fire = "flower-fire"
-                }
                 
                 if (fire.count > 0) {
                     let particleSystem = SCNParticleSystem(named: fire, inDirectory: nil)
@@ -937,7 +934,7 @@ extension MainViewController {
         // 去掉定时反而很好？
         DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
             if (self.findingText.isHidden == false) {
-                self.findingText.text = "请左右寻找光滑的平面"
+                self.findingText.text = "请寻找光滑的平面"
             }
         })
         DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: {

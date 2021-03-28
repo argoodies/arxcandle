@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Mixpanel
 
 class ViewModel: ObservableObject {
     @Published var privacyActionSheet: Bool
@@ -28,10 +29,12 @@ class DashboardStaticController: UIApplication {
 
     static func toFeedback() {
         UIApplication.shared.openURL(URL(string: "mailto:argoodies@googlegroups.com?subject=ARCandle%20Feedback")!)
+        Mixpanel.mainInstance().track(event: "feedback-open")
     }
     
     static func toRate() {
         UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/app/arxcandle/id1346647915?mt=8")!)
+        Mixpanel.mainInstance().track(event: "rate-open")
     }
 }
 
@@ -49,12 +52,13 @@ struct DashboardView: View {
             VStack {
                 Button(action: {
                     vm.privacyActionSheet = true
+                    Mixpanel.mainInstance().track(event: "policy")
                 }) {
                     HStack{
                         Image(systemName: "lock")
-                            .font(.system(size: 20.0))
                             .frame(minWidth: 30, idealWidth: 30)
                         Text("隐私协议")
+                            .font(.system(size: 18.0))
                         Spacer()
                     }
                     .foregroundColor(.primary)
@@ -69,13 +73,13 @@ struct DashboardView: View {
 
                 Button(action: {
                     vm.feedbackActionSheet = true
+                    Mixpanel.mainInstance().track(event: "feedback")
                 }) {
                     HStack{
-                        
                         Image(systemName: "paperplane")
-                            .font(.system(size: 20.0))
                             .frame(minWidth: 30, idealWidth: 30)
                         Text("意见反馈")
+                            .font(.system(size: 18.0))
                         Spacer()
                     }
                     .foregroundColor(.primary)
@@ -100,13 +104,14 @@ struct DashboardView: View {
 
                 Button(action: {
                     vm.rateActionSheet = true
+                    Mixpanel.mainInstance().track(event: "rate")
                 }) {
                     HStack{
                         
                         Image(systemName: "hand.thumbsup")
-                            .font(.system(size: 20.0))
                             .frame(minWidth: 30, idealWidth: 30)
                         Text("给我们好评")
+                            .font(.system(size: 18.0))
                         Spacer()
                     }
                     .foregroundColor(.primary)
@@ -132,13 +137,14 @@ struct DashboardView: View {
                 
                 Button(action: {
                     vm.timelineActionSheet = true
+                    Mixpanel.mainInstance().track(event: "share")
                 }) {
                     HStack{
                         
                         Image(systemName: "square.and.arrow.up")
-                            .font(.system(size: 20.0))
                             .frame(minWidth: 30, idealWidth: 30)
                         Text("分享给好友")
+                            .font(.system(size: 18.0))
                         Spacer()
                     }
                     .foregroundColor(.primary)
@@ -153,12 +159,13 @@ struct DashboardView: View {
 
                 Button(action: {
                     vm.versionActionSheet = true
+                    Mixpanel.mainInstance().track(event: "version")
                 }) {
                     HStack{
                         Image(systemName: "info.circle")
-                            .font(.system(size: 20.0))
                             .frame(minWidth: 30, idealWidth: 30)
                         Text("当前版本")
+                            .font(.system(size: 18.0))
                         Spacer()
                     }
                     .foregroundColor(.primary)
