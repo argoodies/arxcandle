@@ -180,6 +180,7 @@ struct DashboardView: View {
             .padding(.vertical)
             Spacer()
         }
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 

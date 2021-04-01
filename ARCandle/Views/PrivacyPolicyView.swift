@@ -97,5 +97,6 @@ class WebviewController: UIViewController, WKNavigationDelegate {
 struct PrivacyPolicyView: View {
     var body: some View {
         Webview(url: URL(string: "https://argoodies.github.io/arxcandle-share/policy")!)
+            .edgesIgnoringSafeArea(.all)
     }
 }
