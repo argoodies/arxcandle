@@ -401,8 +401,8 @@ class MainViewController: UIViewController, UITextFieldDelegate {
             self.toastPromtMessage(message: "风雨过后，必见彩虹。")
             Mixpanel.mainInstance().track(event: "promt-action-1")
         }))
-        alert.addAction(UIAlertAction(title: NSLocalizedString("愿我们永远年轻，永远热泪盈眶。", comment: "string_2"), style: .`default`, handler: { _ in
-            self.toastPromtMessage(message: "愿我们永远年轻，永远热泪盈眶。")
+        alert.addAction(UIAlertAction(title: NSLocalizedString("一花一世界，一叶一菩提。", comment: "string_2"), style: .`default`, handler: { _ in
+            self.toastPromtMessage(message: "一花一世界，一叶一菩提。")
             Mixpanel.mainInstance().track(event: "promt-action-2")
         }))
         alert.addAction(UIAlertAction(title: NSLocalizedString("你若安好，便是晴天。", comment: "string_3"), style: .`default`, handler: { _ in
@@ -713,6 +713,9 @@ extension MainViewController :VirtualObjectSelectionViewControllerDelegate {
                 }
                 else if object.title == "冰蜡烛" {
                     fire = "blue-fire"
+                }
+                else if object.title == "一花一世界" {
+                    // no fire
                 }
                 
                 if (fire.count > 0) {

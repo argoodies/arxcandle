@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Mixpanel
 
 struct VersionView: View {
     var body: some View {
@@ -19,16 +20,26 @@ struct VersionView: View {
             Text("AR祈福")
                 .font(.system(size: 20))
                 .padding(.top, 16)
-            Text("Version 3.0.4")
+            Text("Version 3.2.0")
                 .font(.system(size: 16))
                 .foregroundColor(Color.secondary)
                 .padding(.top, 2)
             Spacer()
             Spacer()
+            Spacer()
+            Button(action: {
+                    UIApplication.shared.openURL(URL(string: "https://argoodies.github.io/arxcandle-share/license")!)
+                    Mixpanel.mainInstance().track(event: "license-open")
+            }) {
+                Text("开源和第三方许可")
+                    .font(.system(size: 12))
+                    .foregroundColor(Color.secondary)
+            }
             Text("Copyright © 2021 AR Goodies")
                 .font(.system(size: 12))
                 .foregroundColor(Color.secondary)
-                .padding()
+                .padding(.top, 2)
+                .padding(.bottom)
         }
     }
 }
