@@ -35,11 +35,16 @@ struct VersionView: View {
                     .font(.system(size: 12))
                     .foregroundColor(Color.secondary)
             }
-            Text("Copyright © 2021 AR Goodies")
-                .font(.system(size: 12))
-                .foregroundColor(Color.secondary)
-                .padding(.top, 2)
-                .padding(.bottom)
+            Button(action: {
+                    UIApplication.shared.openURL(URL(string: "https://argoodies.github.io/arxcandle-share")!)
+                    Mixpanel.mainInstance().track(event: "copyright-open")
+            }) {
+                Text("Copyright © 2021 AR Goodies")
+                    .font(.system(size: 12))
+                    .foregroundColor(Color.secondary)
+            }
+            .padding(.top, 2)
+            .padding(.bottom)
         }
     }
 }
