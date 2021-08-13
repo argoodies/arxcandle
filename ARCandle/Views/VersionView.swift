@@ -20,7 +20,7 @@ struct VersionView: View {
             Text("AR祈福")
                 .font(.system(size: 20))
                 .padding(.top, 16)
-            Text("Version 3.2.0")
+            Text("Version 3.2.1")
                 .font(.system(size: 16))
                 .foregroundColor(Color.secondary)
                 .padding(.top, 2)
